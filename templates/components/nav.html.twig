@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/nav.css')}}">
+        {% endblock %}
+	</head>
+	<header>
+		<div class="nav-container">
+			<div class="logo">
+				<a href="{{ path('main_index') }}">
+					<span>
+						<i class="fa-solid fa-film"></i>
+					</span>
+					Movielib</a>
+			</div>
+            <div class="nav">
+            <a href="{{ path('main_index') }}"></a>
+            <a href="{{ path('movies_cataloge') }}">Catalogue</a>
+            <a href="{{ path('movie_creation') }}">Ajouter une film</a>
+            <a href="">Statistiques</a>
+
+            </div>
+		</div>
+	</header>
+</html>

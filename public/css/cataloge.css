@@ -1,0 +1,30 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+section .card {
+    background-color: var(--main);
+    width: 220px;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+}
+
+section .card .poster {
+    height: 320px;
+    width: 100%;
+}
+
+section .card .poster img {
+    height: 100%;
+    width: 100%;
+}
+
+section .card span {
+    color: var(--light);
+    font-size: 1.6rem;
+    font-weight: 600;
+}

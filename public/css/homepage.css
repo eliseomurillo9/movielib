@@ -1,0 +1,44 @@
+.head {
+    position: absolute;
+}
+
+.head .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.head .button a {
+    position: relative;
+    color: var(--light);
+    font-size: 4rem;
+    font-size: 600;
+    text-align: center;
+
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 18px;
+    color: var(--secondary);
+
+    transition: 0.4s;
+}
+
+
+.head .button a:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.back_img {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../img/movies-poster.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

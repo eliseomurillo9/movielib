@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil -
+	{{ parent() }}
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/homepage.css')}}">
+{% endblock %}
+
+{% block body %}
+	<section>
+		<div class="head">
+		<div class="button">
+			<a href="{{ path('movies_cataloge') }}">Catalogue</a>
+		</div>
+			<div class="back_img"></div>
+		</div>
+	</section>
+{% endblock %}

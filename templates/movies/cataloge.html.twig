@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catalogue -
+	{{ parent() }}
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/cataloge.css')}}">
+{% endblock %}
+{% block body %}
+
+	<section>
+
+		{% for movie in movies %}
+			<div class="card">
+				<div class="poster">
+					<img src="{{ asset('img/' ~ movie.poster) }}" alt="">
+				</div>
+				<span>{{ movie.name }}</span>
+			</div>
+		{% endfor %}
+	</section>
+
+{% endblock %}
